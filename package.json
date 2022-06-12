@@ -1,5 +1,5 @@
 {
-  "name": "alvs-eslint-config",
+  "name": "@alvs-company/alvs-eslint-config",
   "version": "1.0.0",
   "description": "Advanced Level Virtual Systems base ESLint config repository.",
   "main": "index.js",
@@ -23,10 +23,7 @@
   },
   "author": "ALVS Company",
   "contributors": [
-    {
-      "name": "Gabriel Da Silva Alves",
-      "url": "https://github.com/gabealvss"
-    }
+    "Gabriel Da Silva Alves (https://github.com/gabealvss)"
   ],
   "license": "MIT",
   "keywords": [
@@ -36,7 +33,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "github:ALVS-Company/alvs-eslint-config"
+    "url": "git+https://github.com/ALVS-Company/alvs-eslint-config.git"
   },
   "bugs": {
     "url": "https://github.com/ALVS-Company/alvs-eslint-config/issues"
