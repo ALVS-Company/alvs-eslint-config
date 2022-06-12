@@ -1,0 +1,51 @@
+{
+  "name": "alvs-eslint-config",
+  "version": "1.0.0",
+  "description": "Advanced Level Virtual Systems base ESLint config repository.",
+  "main": "index.js",
+  "dependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-unicorn": "^42.0.0"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "eslint": "^8.17.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0"
+  },
+  "author": "ALVS Company",
+  "contributors": [
+    {
+      "name": "Gabriel Da Silva Alves",
+      "url": "https://github.com/gabealvss"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "styleguide",
+    "alvs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "github:ALVS-Company/alvs-eslint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/ALVS-Company/alvs-eslint-config/issues"
+  },
+  "homepage": "https://github.com/ALVS-Company/alvs-eslint-config",
+  "engines": {
+    "node": ">= 14"
+  },
+  "prettier": {
+    "singleQuote": false
+  }
+}

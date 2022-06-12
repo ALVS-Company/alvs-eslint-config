@@ -1,0 +1,32 @@
+module.exports = {
+  env: {
+    browser: true,
+  },
+  ignorePatterns: ["**/*.d.*"],
+  extends: [
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "./index.js",
+  ],
+  rules: {
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      { checkVoidReturn: false },
+    ],
+    "react/jsx-filename-extesion": "off",
+    "react/prop-types": "off",
+  },
+  overrides: [
+    {
+      files: ["**/.tsx"],
+      rules: {
+        "@typescript-eslint/no-floating-promises": 'off',
+      },
+    },
+  ],
+};
