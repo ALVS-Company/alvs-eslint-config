@@ -9,13 +9,13 @@ You can extended one of these configurations, depending on the project you are d
 -- **alvs-company/react**
 -- **alvs-company/react-typescript**
 
-PS.: If you are using `alvs-company/typescript` or `alvs-company/react-typescript` configs you will need to install some dependencies:
+PS.: If you are using `@alvs-company/typescript` or `@alvs-company/react-typescript` configs you will need to install some dependencies:
 
 ```bash
 yarn @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
-for `alvs-company/react-typescript` also install:
+for `@alvs-company/react-typescript` also install:
 
 ```bash
 yarn eslint-plugin-jsx-ally eslint-plugin-react eslint-plugin-react-hooks
@@ -24,7 +24,7 @@ yarn eslint-plugin-jsx-ally eslint-plugin-react eslint-plugin-react-hooks
 finally, install ALVS ESLint config
 
 ```bash
-yarn alvs-eslint-config
+yarn @alvs-company/alvs-eslint-config
 ```
 
 ## Setup
