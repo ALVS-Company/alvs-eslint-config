@@ -1,25 +1,47 @@
 module.exports = {
   ignorePatterns: ["**/node_modules"],
-  reportUnusedDisableDirectives: true,
-  plugins: ["import"],
+  env: {
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
   extends: [
-    "plugin:eslint-comments/recommended",
-    "plugin:promise/recommended",
-    "plugin:unicorn/recommended",
-    "plugin:prettier/recommended",
+    "airbnb-base",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  plugins: [
+    "eslint-plugin-import-helpers",
+    "prettier"
   ],
   rules: {
+    "camelcase": "on",
+    "import/no-unresolved": "error",
+    "class-methods-use-this": "off",
     "import/prefer-default-export": "off",
-    "promise/always-return": "off",
-    "promise/catch-or-return": ["error", { allowFinally: true }],
-    "unicorn/filename-case": [
-      "error",
-      { cases: { camelCase: true, pascalCase: true } },
+    "no-shadow": "off",
+    "no-console": "off",
+    "no-useless-constructor": "off",
+    "no-empty-function": "off",
+    "lines-between-class-members": "off",
+    "import/extensions": "error",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": ["module", "/^@/", ["parent", "sibling", "index"]],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
     ],
-    "unicorn/no-array-for-each": "off",
-    "unicorn/no-array-reduce": "off",
-    "unicorn/no-null": "off",
-    "unicorn/no-useless-undefined": "off",
-    "unicorn/prevent-abbreviations": "off",
-  },
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/*.spec.js"] }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
 };

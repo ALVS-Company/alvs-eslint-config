@@ -4,21 +4,13 @@ ALVS - Advanced Level Virtual Systems default eslint code pattern config for use
 # Usage
 You can extended one of these configurations, depending on the project you are developing:
 
--- **alvs-company**
--- **alvs-company/typescript**
--- **alvs-company/react**
--- **alvs-company/react-typescript**
+-- **alvs-company/alvs-eslint-config**
+-- **alvs-company/alvs-eslint-config/typescript**
 
-PS.: If you are using `@alvs-company/typescript` or `@alvs-company/react-typescript` configs you will need to install some dependencies:
+PS.: If you are using `@alvs-company/alvs-eslint-config/typescript` config you will need to install some dependencies:
 
 ```bash
 yarn @typescript-eslint/eslint-plugin @typescript-eslint/parser
-```
-
-for `@alvs-company/react-typescript` also install:
-
-```bash
-yarn eslint-plugin-jsx-ally eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 finally, install ALVS ESLint config
@@ -34,7 +26,7 @@ For setting up ALVS ESLint Config, just extend and tweak the config as you like 
 {
   "eslintConfig": {
     "root": true,
-    "extends": "alvs-company/typescript",
+    "extends": "@alvs-company/alvs-eslint-config/SELECTED-ESLINT-CONFIG",
     "parserOptions": {
       "project": "./tsconfig.json"
     }
