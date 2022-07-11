@@ -4,10 +4,10 @@ ALVS - Advanced Level Virtual Systems default eslint code pattern config for use
 # Usage
 You can extended one of these configurations, depending on the project you are developing:
 
--- **eslint-config-alvstech**
--- **eslint-config-alvstech/typescript**
+-- **alvstech**
+-- **alvstech/typescript**
 
-PS.: If you are using `eslint-config-alvstech/typescript` config you will need to install some dependencies:
+PS.: If you are using `alvstech/typescript` config you will need to install some dependencies:
 
 ```bash
 yarn add @typescript-eslint/eslint-plugin @typescript-eslint/parser
@@ -26,7 +26,7 @@ For setting up ALVS ESLint Config, just extend and tweak the config as you like 
 {
   "eslintConfig": {
     "root": true,
-    "extends": "eslint-config-alvstech/SELECTED-ESLINT-CONFIG",
+    "extends": "alvstech/SELECTED-ESLINT-CONFIG",
     "parserOptions": {
       "project": "./tsconfig.json"
     }
