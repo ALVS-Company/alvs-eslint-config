@@ -1,5 +1,5 @@
 {
-  "name": "@gabealvss/eslint-config-alvstech",
+  "name": "eslint-config-alvstech",
   "version": "2.0.0",
   "description": "Advanced Level Virtual Systems base ESLint config repository.",
   "main": "index.js",
