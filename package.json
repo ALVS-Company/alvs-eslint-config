@@ -1,6 +1,6 @@
 {
   "name": "@alvs-company/alvs-eslint-config",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Advanced Level Virtual Systems base ESLint config repository.",
   "main": "index.js",
   "dependencies": {
