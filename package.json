@@ -1,5 +1,5 @@
 {
-  "name": "@alvs-company/alvs-eslint-config",
+  "name": "@gabealvss/eslint-config-alvstech",
   "version": "2.0.0",
   "description": "Advanced Level Virtual Systems base ESLint config repository.",
   "main": "index.js",
@@ -29,16 +29,19 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ALVS-Company/alvs-eslint-config.git"
+    "url": "git+https://github.com/ALVS-Company/eslint-config-alvstech.git"
   },
   "bugs": {
-    "url": "https://github.com/ALVS-Company/alvs-eslint-config/issues"
+    "url": "https://github.com/ALVS-Company/eslint-config-alvstech/issues"
   },
-  "homepage": "https://github.com/ALVS-Company/alvs-eslint-config",
+  "homepage": "https://github.com/ALVS-Company/eslint-config-alvstech",
   "engines": {
     "node": ">= 14"
   },
   "prettier": {
     "singleQuote": false
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
