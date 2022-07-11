@@ -15,7 +15,7 @@ module.exports = {
     "prettier"
   ],
   rules: {
-    "camelcase": "on",
+    "camelcase": "error",
     "import/no-unresolved": "error",
     "class-methods-use-this": "off",
     "import/prefer-default-export": "off",
